@@ -1,9 +1,9 @@
 {
   "version": "2.0.0",
   "tasks": [
-    {"label": "GPU: diagnostico", "type": "shell", "command": "python scripts/check_gpu.py", "problemMatcher": []},
-    {"label": "LLM: treinar LoRA", "type": "shell", "command": "python src/train.py --epochs 3 --learning-rate 0.0002", "problemMatcher": []},
-    {"label": "LLM: avaliar", "type": "shell", "command": "python src/evaluate.py --adapter outputs/lora-10ep-lr5e-4 --output outputs/evaluation-10ep-lr5e-4.json", "problemMatcher": []},
-    {"label": "Frontend: iniciar", "type": "shell", "command": "python src/app.py --adapter outputs/lora-10ep-lr5e-4", "problemMatcher": []}
+    {"label": "GPU: diagnostico", "type": "shell", "command": ".\\.venv\\Scripts\\python.exe scripts/check_gpu.py", "problemMatcher": []},
+    {"label": "LLM: treinar LoRA", "type": "shell", "command": ".\\.venv\\Scripts\\python.exe src/train.py --epochs 10 --learning-rate 0.0005 --gradient-accumulation-steps 1 --output-dir outputs/lora-10ep-lr5e-4", "problemMatcher": []},
+    {"label": "LLM: avaliar", "type": "shell", "command": ".\\.venv\\Scripts\\python.exe src/evaluate.py --adapter outputs/lora-10ep-lr5e-4 --output outputs/evaluation-10ep-lr5e-4.json", "problemMatcher": []},
+    {"label": "Frontend: iniciar", "type": "shell", "command": ".\\.venv\\Scripts\\python.exe src/app.py --adapter outputs/lora-10ep-lr5e-4", "problemMatcher": []}
   ]
 }
