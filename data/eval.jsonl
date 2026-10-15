@@ -1,0 +1,5 @@
+{"prompt":"A internet caiu apenas no meu computador e o icone mostra conectado.","category":"rede","priority":"alta","reference":"Verifique IP, teste outro dispositivo e reinicie o roteador antes de acionar o suporte."}
+{"prompt":"Alguem pode ter roubado minha senha e entrou na conta.","category":"seguranca","priority":"critica","reference":"Troque a senha, encerre sessoes, ative MFA e comunique a seguranca."}
+{"prompt":"Quero instalar um programa que esta no catalogo oficial.","category":"software","priority":"baixa","reference":"Instale pelo catalogo corporativo ou solicite ajuda ao suporte."}
+{"prompt":"Nao consigo entrar porque minha conta foi bloqueada.","category":"acesso","priority":"alta","reference":"Solicite desbloqueio pelo canal oficial apos confirmar sua identidade."}
+{"prompt":"Meu segundo monitor nao mostra imagem pelo HDMI.","category":"hardware","priority":"media","reference":"Teste cabo, porta e monitor em outro computador."}

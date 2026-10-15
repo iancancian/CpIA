@@ -1,0 +1,55 @@
+# Ambientes e caches locais
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+pip-wheel-metadata/
+
+# Configuracoes e credenciais
+.env
+.env.*
+!.env.example
+*.secret
+secrets.*
+credentials.*
+*_credentials.json
+token.*
+tokens.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+.aws/
+.azure/
+.ssh/
+
+# Pesos, checkpoints e artefatos de treinamento
+outputs/
+models/
+checkpoints/
+runs/
+wandb/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+# Logs e arquivos temporarios
+*.log
+*.tmp
+*.temp
+*.bak
+
+# Sistema operacional e editores
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/*.code-snippets
