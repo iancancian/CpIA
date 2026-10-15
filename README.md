@@ -195,35 +195,6 @@ Funcionalidades:
 - Resposta exibida em formato JSON;
 - Modelo carregado localmente na GPU NVIDIA.
 
-## 10. Print da GPU no VS Code
-
-O print solicitado deve mostrar que a GPU esta instalada e funcionando dentro do VS Code.
-
-1. Abra o projeto no VS Code.
-2. Abra `Terminal > Run Task` ou pressione `Ctrl+Shift+P` e escolha `Tasks: Run Task`.
-3. Execute a tarefa `GPU: diagnostico`.
-4. Aguarde a saida de `nvidia-smi` e do PyTorch.
-5. Capture o painel do terminal mostrando:
-   - `NVIDIA GeForce GTX 1060 6GB`;
-   - memoria da GPU;
-   - `cuda_disponivel: True`;
-   - versao CUDA do PyTorch.
-7. Pressione `Win+Shift+S`, selecione apenas o painel do terminal e salve a imagem.
-8. Use esse print no relatorio da entrega.
-
-Alternativa: abra o menu Iniciar, procure por **Ferramenta de Captura**, clique em
-`Novo` e selecione o painel do terminal.
-
-As extensoes recomendadas para monitoramento sao:
-
-- `GPU Environment`;
-- `GPU Monitor`.
-
-O diagnostico tambem pode ser executado manualmente:
-
-```powershell
-python scripts/check_gpu.py
-```
 
 ## 11. Tarefas do VS Code
 
@@ -277,16 +248,3 @@ Depois da verificacao da GPU, ele pode treinar, avaliar e abrir o frontend segui
 - Os pesos treinados nao sao enviados ao GitHub por causa do tamanho;
 - A primeira execucao precisa baixar aproximadamente 3 GB do modelo base.
 
-## 14. Checklist da entrega
-
-- [x] Problema especifico definido;
-- [x] LLM escolhida e documentada;
-- [x] Treinamento local com LoRA;
-- [x] Teste de diferentes parametros;
-- [x] Avaliacao das respostas;
-- [x] Testes executados com GPU;
-- [x] Frontend para inserir prompts;
-- [x] Procedimento para o print da GPU no VS Code;
-- [x] Codigo, dados e documentacao preparados para o GitHub;
-- [ ] Print real do terminal do VS Code anexado ao relatorio;
-- [x] URL real do repositorio GitHub adicionada nesta documentacao: https://github.com/iancancian/CpIA.git
